@@ -1,0 +1,30 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.flag-container{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.flag{
+    width: 610px;
+    height: 310px;
+    background-color: green;
+    position: relative;
+}
+.circle{
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    background-color: red;
+    position: absolute;
+    top:30%;
+    left: 40%;
+}
