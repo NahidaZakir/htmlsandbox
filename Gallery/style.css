@@ -1,0 +1,69 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #f4f4f4;
+}
+
+.container{
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+.image{
+    position: relative;
+}
+/* Number on images */
+h2{
+    color: white;
+    background-color: transparent;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    display: none;
+    transition: all 0.3s ease-in-out;
+}
+
+img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: all 0.3s ease-in-out;
+}
+
+.gallery-title{
+    text-align: center;
+    margin: 10px;
+}
+.gallery-box{
+    display: flex;
+    justify-content: center;
+}
+.gallery-images{
+    display: grid;
+    grid-template-columns: repeat(3,250px);
+    grid-template-rows: repeat(3,250px);
+    grid-gap: 0.5rem;
+}
+/* Spanning Columns and Rows */
+#one{
+    grid-row:1 /span 2;
+}
+#two{
+    grid-column: 2 / span 2;
+}
+#three{
+    grid-row: 2 / span 1;
+}
+#four{
+    grid-row: 2 / span 2;
+}
+
+/* On hover */
+img:hover{
+    filter:brightness(50%);
+}
+img:hover + h2{
+    display: block;
+}
