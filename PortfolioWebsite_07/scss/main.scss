@@ -133,4 +133,48 @@ img{
        
     }
 
+    // home section C
+    &-c{
+        .process{
+            display:grid;
+            grid-template-columns: repeat(4,1fr);
+            grid-gap:1.5rem;
+            text-align: center;
+            &-icon{
+                border-radius: 50%;
+                background-color: $dark-color;
+                color: white;
+                padding: 0rem;
+                width: 110px;
+                height:110px;
+                line-height:110px;
+                text-align:center;
+                position: relative;
+                transition: all 1s ;
+
+                &:hover{
+                    background-color: $main-color;
+                    width: 130px;
+                    height: 130px;
+                    line-height: 130px;
+                    .process-step{
+                        background-color: $dark-color;
+                    }
+                }
+            }
+            &-step{
+                position: absolute;
+                top:0;
+                right:0;
+                font-size: 16px;
+                background-color: $main-color;
+                border-radius: 50%;
+                height: 30px;
+                width: 30px;
+                line-height: 30px; 
+                transition: all 1s ;
+            }
+        }
+    }
+
 }

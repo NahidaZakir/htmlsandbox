@@ -190,4 +190,43 @@ img {
 }
 #home-b .stats div:nth-child(even) {
   background-color: #ccc;
+}
+#home-c .process {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.5rem;
+  text-align: center;
+}
+#home-c .process-icon {
+  border-radius: 50%;
+  background-color: #333;
+  color: white;
+  padding: 0rem;
+  width: 110px;
+  height: 110px;
+  line-height: 110px;
+  text-align: center;
+  position: relative;
+  transition: all 1s;
+}
+#home-c .process-icon:hover {
+  background-color: #ffbc00;
+  width: 130px;
+  height: 130px;
+  line-height: 130px;
+}
+#home-c .process-icon:hover .process-step {
+  background-color: #333;
+}
+#home-c .process-step {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 16px;
+  background-color: #ffbc00;
+  border-radius: 50%;
+  height: 30px;
+  width: 30px;
+  line-height: 30px;
+  transition: all 1s;
 }/*# sourceMappingURL=main.css.map */
