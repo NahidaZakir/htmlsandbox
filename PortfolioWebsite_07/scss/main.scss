@@ -143,7 +143,7 @@ img{
             &-icon{
                 border-radius: 50%;
                 background-color: $dark-color;
-                color: white;
+                color:set-text-color($dark-color);
                 padding: 0rem;
                 width: 110px;
                 height:110px;
@@ -159,6 +159,7 @@ img{
                     line-height: 130px;
                     .process-step{
                         background-color: $dark-color;
+                        color:set-text-color($dark-color);
                     }
                 }
             }
@@ -168,6 +169,7 @@ img{
                 right:0;
                 font-size: 16px;
                 background-color: $main-color;
+                color:set-text-color($main-color)
                 border-radius: 50%;
                 height: 30px;
                 width: 30px;
@@ -177,4 +179,31 @@ img{
         }
     }
 
+}
+
+#main-footer{
+    background-color: $dark-color;
+    color:white;
+    height: 5rem;
+    .footer-content{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 5rem;
+        align-items: center;
+
+        .social .fab{
+            margin-right: 1rem;
+            border: 2px #fff solid;
+            border-radius: 50%;
+            height: 30px;
+            width: 30px;
+            line-height: 30px;
+            text-align: center;
+
+            &:hover{
+                background-color: $main-color;
+            }
+        }
+    }
 }
